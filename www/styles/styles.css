@@ -1,0 +1,198 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+header {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+}
+
+header h2 {
+  padding: 0;
+  margin: 0;
+}
+
+header #menu_icon {
+  position: absolute;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header #menu_icon div {
+  width: 20px;
+  height: 5px;
+  background: #000;
+  border-radius: 10px;
+}
+
+header #menu_icon div:last-child {
+  width: 30px;
+  margin-top: 5px;
+}
+
+.page {
+  margin: 90px 0 70px;
+  -webkit-transform: translate(-100%, 0px);
+          transform: translate(-100%, 0px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
+.page.show {
+  -webkit-transform: translate(0%, 0px);
+          transform: translate(0%, 0px);
+}
+
+main .todo {
+  -webkit-box-shadow: 2px 3px 5px 2px #eee;
+          box-shadow: 2px 3px 5px 2px #eee;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+main .todo::before {
+  content: ' ';
+  width: 4px;
+  height: 4px;
+  border-radius: 50px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: blue;
+}
+
+main .todo .time {
+  position: absolute;
+  font-size: .6rem;
+  right: 13px;
+  bottom: 10px;
+}
+
+main .todo .icon {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50px;
+}
+
+main .todo .todo_item {
+  padding-left: 15px;
+}
+
+section#tab {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));
+  background: linear-gradient(transparent, white);
+}
+
+section#tab button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background: #000;
+  color: white;
+  font-size: 2rem;
+  -webkit-box-shadow: 2px 3px 5px 2px #eee;
+          box-shadow: 2px 3px 5px 2px #eee;
+  cursor: pointer;
+}
+
+#create_todo #colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+#create_todo #colors button {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  margin: 10px 20px;
+  border-radius: 50px;
+}
+
+#create_todo form {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#create_todo form .input {
+  width: 100%;
+  margin: 10px 0 30px;
+  text-align: left;
+}
+
+#create_todo form .input input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 7px;
+  font-size: .8rem;
+}
+
+#create_todo form .input textarea {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#create_todo form button {
+  background: #000;
+  border-radius: 10px;
+  color: white;
+  margin-top: 40px;
+  padding: 10px 40px;
+  font-size: .8rem;
+}
+/*# sourceMappingURL=styles.css.map */

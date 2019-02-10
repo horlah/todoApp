@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <title>TodoList App</title>
+</head>
+<body>
+    <header>
+        <h2>Todo</h2>
+        <div id="menu_icon">
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <div id="index" class="page show">
+        <main>
+            <div class="todo">
+                <div class="icon"></div>
+                <div class="todo_item">Todo here right?</div>
+                <div class="time">1 May, 1222</div>
+            </div>
+    
+            <div class="todo">
+                <div class="icon"></div>
+                <div class="todo_item">Todo here right?</div>
+                <div class="time">1 May, 1222</div>
+            </div>
+            
+            <div class="todo">
+                <div class="icon"></div>
+                <div class="todo_item">Todo here right?</div>
+                <div class="time">1 May, 1222</div>
+            </div>
+            
+            <div class="todo">
+                <div class="icon"></div>
+                <div class="todo_item">Todo here right?</div>
+                <div class="time">1 May, 1222</div>
+            </div>
+            
+            <div class="todo">
+                <div class="icon"></div>
+                <div class="todo_item">Todo here right?</div>
+                <div class="time">1 May, 1222</div>
+            </div>
+            
+            <div class="todo">
+                <div class="icon"></div>
+                <div class="todo_item">Todo here right?</div>
+                <div class="time">1 May, 1222</div>
+            </div>
+            
+            <div class="todo">
+                <div class="icon"></div>
+                <div class="todo_item">Todo here right?</div>
+                <div class="time">1 May, 1222</div>
+            </div>
+            
+            <div class="todo">
+                <div class="icon"></div>
+                <div class="todo_item">Todo here right?</div>
+                <div class="time">1 May, 1222</div>
+            </div>
+            
+            <div class="todo">
+                <div class="icon"></div>
+                <div class="todo_item">Todo here right?</div>
+                <div class="time">1 May, 1222</div>
+            </div>
+
+        </main>
+    </div>
+
+    <section id="tab">
+        <button onclick="toggleCreatePage(true)">+</button>
+    </section>
+
+    <div id="create_todo" class="page">
+        <section>
+            <div id="colors">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+
+            <form>
+                <div class="input">
+                    <label for="todoName">Name</label>
+                    <input id="todoName" type="text">
+                </div>
+                <div class="input">
+                    <label for="todoDescription">Description</label>
+                    <textarea name="todoDescription" id="todoDescription" cols="30" rows="10"></textarea>
+                </div>
+                <button onclick="toggleCreatePage(false, event)">Add Todo</button>
+            </form>
+        </section>
+    </div>
+    
+    <script src="./js/javascript.js"></script>
+    
+</body>
+</html>
